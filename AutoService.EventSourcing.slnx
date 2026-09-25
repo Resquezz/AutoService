@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="AutoService.Api/AutoService.Api.csproj" />
+  <Project Path="AutoService.AuditConsumer/AutoService.AuditConsumer.csproj" />
+  <Project Path="AutoService.Consumer/AutoService.Consumer.csproj" />
+  <Project Path="AutoService.ReadModel.Api/AutoService.ReadModel.Api.csproj" />
+  <Project Path="AutoService.Tests/AutoService.Tests.csproj" />
+</Solution>

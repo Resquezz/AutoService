@@ -1,0 +1,153 @@
+.page-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #e5eefb;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #7dd3fc;
+}
+
+h1, h2, h3 {
+  margin: 0 0 12px;
+}
+
+.panel {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+}
+
+.create-panel {
+  margin-bottom: 18px;
+}
+
+.inline-form, .mini-form {
+  display: grid;
+  gap: 12px;
+}
+
+.inline-form {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.mini-form {
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+input {
+  border: 1px solid #374151;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+  color: white;
+  font-weight: 600;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.refresh-button {
+  background: #1d4ed8;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1.7fr;
+  gap: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #1f2937;
+  text-align: left;
+}
+
+tr.selected {
+  background: rgba(59, 130, 246, 0.12);
+}
+
+tr:hover {
+  background: rgba(148, 163, 184, 0.05);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stack-actions {
+  display: grid;
+  gap: 18px;
+}
+
+.complete-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.complete-button {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.sub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.list-box {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.list-box li {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+@media (max-width: 900px) {
+  .content-grid,
+  .sub-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
